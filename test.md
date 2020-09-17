@@ -3,17 +3,35 @@
 ## Short questions
 
 - What is a package? How do you define a package?
-- What is a constructor? When is it executed?
-- How do you implement inheritance in Java?
-- How do you prevent someone to inherit from a class?
-- What is a final variable? Where you can assign value to final variables?
-- Specify the available access modifiers in Java and briefly explain them
-- Briefly explain the mechanism of exception handling
-- What is the difference between an abstract class and an interface?
-- What is the difference between Comparator and Comparable?
-- How Iterable and Iterator interface works? What methods need to exist in a
-class that implements them? What is their relation to for loops?
+- A package in Java is used to group related classes. Think of it as a folder in a file directory. We use packages to avoid name conflicts, and to write a better maintainable code.
 
+- What is a constructor? When is it executed?
+- A constructor in Java is a special method that is used to initialize objects. The constructor is called when an object of a class is created.
+
+- How do you implement inheritance in Java?
+- To inherit from a class, use the extends keyword.
+
+- How do you prevent someone to inherit from a class?
+- If you don't want other classes to inherit from a class, use the final keyword.
+
+- What is a final variable? Where you can assign value to final variables?
+- A non-access modifier used for classes, attributes and methods, which makes them non-changeable.
+- In Java, non-static final variables can be assigned a value either in constructor or with the declaration. But, static final variables cannot be assigned value in constructor; they must be assigned a value with their declaration.
+
+- Specify the available access modifiers in Java and briefly explain them
+private - visible to the class only
+protected - visible to the package and all subclasses
+public - visible to the world
+
+- Briefly explain the mechanism of exception handling
+- The Exception Handling in Java is one of the powerful mechanism to handle the runtime errors so that normal flow of the application can be maintained.
+
+- What is the difference between an abstract class and an interface?
+- A class can have a state which can be modified by non-abstract methods but an interface cannot have the state because they can't have instance variables. The second difference is that an interface cannot have a constructor even in Java 8 but abstract class always has a constructor in Java.
+- What is the difference between Comparator and Comparable?
+- A Comparable object is capable of comparing itself with another object of same type. A Comparator object is capable of comparing two objects of another class.
+- How Iterable and Iterator interface works? What methods need to exist in a class that implements them? What is their relation to for loops?
+- An Iterable is a simple representation of a series of elements that can be iterated over. It does not have any iteration state such as a "current element". Instead, it has one method that produces an Iterator. An Iterator is the object with iteration state. It lets you check if it has more elements using hasNext() and move to the next element (if any) using next(). Every class that implements Iterable interface appropriately, can be used in the enhanced For loop (for-each loop).
 ## Programming tasks
 
 You can write your solutions in any language, you can even write pseudo code or
